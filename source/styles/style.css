@@ -1,0 +1,614 @@
+/* Common preferences */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans',Arial,sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Body-header */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding-inline: 180px;
+}
+.logo {
+    height: 75px;
+}
+.page-header-text {
+    font-size: 14px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+.page-header-list {
+    list-style: none;
+    text-align: right;
+}
+.page-header-item {
+    font-size: 14px;
+}
+.header-tel {
+    font-size: 20px;
+}
+
+.page-header-list + a {
+    margin-left: 25px;
+    padding: 15px 20px 15px 20px;
+    text-align: center;
+    border: solid 1px white;
+    border-radius: 35px;
+    background-color: #ffa600;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+.page-header-list + a:hover {
+    background-color: #ff5f29;
+}
+
+/* Page-intro */
+.page-intro {
+    display: flex;
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/source/images/hands-at-sewing-machine.jpg') no-repeat 0 -100px;
+    background-size: cover;
+    height: 90vh;
+    text-align: center;
+}
+.page-intro > div {
+    width: 800px;
+    margin: auto;
+}
+.page-title {
+    font-size: 58px;
+    color: white;
+    margin-bottom: 25px;
+}
+.page-description {
+    font-size: 24px;
+    color: white;
+}
+
+/* About */
+.about {
+    display: flex;
+    height: 60vh;
+    background-color: #eff4f7;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.about > div {
+    width: 1000px;
+}
+.about-text {
+    font-size: 30px;
+}
+
+/* Advantages */
+.advantages {
+    display: flex;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+}
+.advantages-title {
+    padding-top: 70px;
+    padding-bottom: 30px;
+    font-size: 38px;
+}
+.advantages-description {
+    font-size: 22px;
+}
+.advantages-content {
+    margin: auto;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+.advantages-list {
+    list-style: none;
+    margin-bottom: 30px;
+    column-count: 2;
+}
+.advantages-item {
+    margin-bottom: 50px;
+    width: 80%;
+}
+.advantages-item-title {
+    margin-bottom: 10px;
+}
+
+/* Services */
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #eff4f7;
+}
+.services-title {
+    margin-top: 70px;
+    margin-bottom: 20px;
+    font-size: 38px;
+}
+.services-description {
+    font-size: 22px;
+}
+.services-list {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 80%;
+    margin-top: 70px;
+    list-style: none;
+    margin-bottom: 70px;
+}
+.services-item {
+    width: 230px;
+}
+.services-img {
+    width: 230px;
+    border: solid 0.5px rgb(201, 201, 201);
+}
+.services-item-title {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-bottom: 10px;
+    border-bottom: solid 0.5px rgb(201, 201, 201);
+}
+
+/* Reviews */
+.reviews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+.reviews-title {
+    text-align: center;
+    font-size: 38px;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+.reviews-content {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+.reviews-list {
+    width: 100%;
+    margin: auto;
+    list-style: none;
+    column-count: 2;
+    margin-bottom: 80px;
+}
+.reviews-item {
+    margin-bottom: 50px;
+}
+.reviews-name {
+    font-size: 18px;
+    text-decoration: underline;
+}
+.review {
+    display: block;
+    width: 80%;
+    border: 0.5px gray;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #eff4f7;
+    margin-top: 15px;
+}
+
+/* Call */
+.call {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eff4f7;
+}
+.call > div {
+    width: 700px;
+}
+.call-title {
+    margin-top: 70px;
+    font-size: 38px;
+    text-align: center;
+}
+.call-description {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 22px;
+    text-align: center;
+}
+label {
+    font-size: 22px;
+    width: 100%;
+}
+input {
+    height: 40px;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    font-size: 18px;
+    padding-left: 10px;
+}
+textarea {
+    padding-top: 15px;
+    width: 100%;
+    font-size: 18px;
+    padding-left: 10px;
+}
+input::placeholder,
+textarea::placeholder {
+    color: rgb(112, 112, 112);
+    padding-left: 10px;
+    font-size: 16px;
+}
+.call-submit {
+    margin-top: 20px;
+    height: 60px;
+    width: 170px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #ffa600;
+    border: white;
+    border-radius: 40px;
+    margin-bottom: 80px;
+}
+.call-submit:hover {
+    background-color: #ff5f29;
+}
+
+/* Contacts */
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 130px;
+    height: 700px;
+}
+.contacts-title {
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+address {
+    font-size: 20px;
+    font-style: normal;
+}
+.contacts-tel:nth-child(2) {
+    display: block;
+    margin-bottom: 20px;
+}
+.contacts-description {
+    margin-bottom: 10px;
+}
+.map {
+    width: 600px;
+}
+
+/* Footer */
+.page-footer {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(64, 64, 64);
+    color: white;
+    font-size: 14px;
+}
+
+
+
+/* Medias */
+@media (max-width: 1135px) {
+    .contacts {
+        display: block;
+        padding-top: 90px;
+    }
+    address {
+        padding-bottom: 50px;
+    }
+}
+
+
+@media (max-width: 1035px) {
+    /* Header */
+    .page-header {
+        padding-inline: 60px;
+    }
+
+    /* Page-intro */
+    .page-intro {
+        background-size: 1000px;
+        height: 500px;
+    }
+    .page-title {
+        font-size: 44px;
+    }
+    .page-description {
+        font-size: 20px;
+    }
+
+    /* About */
+    .about {
+        height: 400px;
+    }
+    .about-text {
+        font-size: 22px;
+    }
+    .about > div {
+        width: 600px;
+    }
+
+    /* Advantages */
+    .advantages-content {
+        width: 60%;
+    }
+    .advantages-title {
+        font-size: 32px;
+    }
+    .advantages-description {
+        font-size: 18px;
+    }
+    .advantages-item {
+        width: 250px;
+    }
+    .advantages-item-title {
+        font-size: 16px;
+    }
+    .advantages-item-description {
+        font-size: 13px;
+    }
+
+    /* Services */
+    .services-list {
+        width: 90%;
+    }
+    .services-title {
+        font-size: 32px;
+    }
+    .services-description {
+        font-size: 18px;
+    }
+    .services-item {
+        width: 170px;
+    }
+    .services-img {
+        width: 170px;
+    }
+    .services-item-title {
+        font-size: 15px;
+    }
+    .ser-description {
+        font-size: 12px;
+    }
+
+    /* Reviews */
+    .reviews-list {
+        column-count: 1;
+    }
+    /* .reviews-list-two {
+        margin: auto;
+        display: block;
+        list-style: none;
+        margin-bottom: 80px;
+    } */
+    .reviews-item {
+        margin-top: 30px;
+    }
+    .reviews-title {
+        font-size: 36px;
+    }
+}
+
+
+@media (max-width: 801px) {
+    /* Header */
+    .logo {
+        width: 180px;
+        height: auto;
+    }
+    .page-header-item {
+        font-size: 9px;
+    }
+    .header-tel {
+        font-size: 11px;
+    }
+
+    /* Page-intro */
+    .page-title {
+        font-size: 36px;
+    }
+    .page-description {
+        font-size: 18px;
+    }
+
+    /* About */
+    .about {
+        height: 300px;
+    }
+    .about-text {
+        width: 80%;
+        margin: auto;
+        font-size: 17px;
+    }
+
+    /* Advantages */
+    .advantages-content {
+        justify-content: space-between;
+    }
+    .advantages-list {
+        width: 100%;
+    }
+    .advantages-item {
+        width: 100%;
+    }
+
+    /* Services */
+    .services-list {
+        display:block;
+        column-count: 2;
+        text-align: center;
+        width: 450px;
+    }
+    .services-item {
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    .services-item-description {
+        font-size: 12px;
+    }
+
+    /* Call */
+    form {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+    }
+
+    /* Contacts */
+    .map {
+        width: 90%;
+    }
+    .contacts {
+        height: auto;
+        padding: 0;
+        margin: 50px;
+    }
+}
+
+
+@media (max-width: 601px) {
+    /* Header */
+    .logo {
+        width: 130px;
+    }
+    .page-header-list {
+        display: none;
+    }
+
+    /* Page-intro */
+    .page-title {
+        font-size: 30px;
+    }
+    
+    /* Advantages */
+    .advantages-title {
+        font-size: 26px;
+    }
+    .advantages-description {
+        font-size: 14px;
+    }
+    
+    .advantages-item-title {
+        font-size: 12px;
+    }
+    .advantages-item-description {
+        font-size: 8px;
+    }
+
+    /* Services */
+    .services {
+        height: auto;
+    }
+    .services-title {
+        font-size: 26px;
+    }
+    .services-description {
+        font-size: 14px;
+    }
+    .services-list {
+        width: 100%;
+    }
+    .services-item {
+        width: 100%;
+    }
+    .services-img {
+        width: 120px;
+    }
+
+    /* Reviews */
+    .reviews {
+        height: auto;
+    }
+    .reviews-list {
+        margin-bottom: 30px;
+    }
+    .reviews-title {
+        font-size: 26px;
+    }
+    .reviews-name {
+        font-size: 14px;
+    }
+    .review {
+        font-size: 12px;
+    }
+
+    /* Call */
+    .call-title {
+        font-size: 26px;
+    }
+    .call-description {
+        font-size: 14px;
+    }
+    label {
+        font-size: 14px;
+    }
+
+    /* Contacts */
+    .contacts-title {
+        font-size: 26px;
+    }
+    address {
+        font-size: 14px;
+    }
+
+    /* Footer */
+    .footer-text {
+        font-size: 10px;
+    }
+}
+
+
+@media (max-width: 426px) {
+    /* Header */
+    .page-header {
+        padding-inline: 20px;
+    }
+    
+    /* Page-intro */
+    .page-title {
+        font-size: 24px;
+    }
+    .page-description {
+        font-size: 14px;
+    }
+
+    /* Contacts */
+    address {
+        padding-bottom: 10px;
+    }
+
+    /* Services */
+    .services-list {
+        margin-bottom: 0px;
+        padding-inline: 10px;
+    }
+
+    
+}
