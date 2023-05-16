@@ -60,7 +60,7 @@ a {
     display: flex;
     background: 
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('../source/images/hands-at-sewing-machine.jpg') no-repeat 0 -100px;
+    url('source/images/hands-at-sewing-machine.jpg') no-repeat 0 -100px;
     background-size: cover;
     height: 90vh;
     text-align: center;
