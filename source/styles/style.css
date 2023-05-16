@@ -506,6 +506,9 @@ address {
     .page-title {
         font-size: 30px;
     }
+    .page-intro {
+        background-position: 40%;
+    }
     
     /* Advantages */
     .advantages-title {
