@@ -607,7 +607,7 @@ address {
     /* Services */
     .services-list {
         margin-bottom: 0px;
-        padding-inline: 10px;
+        padding-inline: 0px;
     }
 
     
