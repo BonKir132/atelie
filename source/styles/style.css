@@ -12,7 +12,7 @@ a {
 
 /* Body-header */
 .page-header {
-    display: flex;
+    display: block;
     justify-content: space-between;
     align-items: center;
     height: 90px;
